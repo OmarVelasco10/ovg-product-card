@@ -14,7 +14,6 @@ export const useProduct = ( {onChange, product, value = 0, initialValues}: usePr
     const [counter, setCounter] = useState<number>(initialValues?.count || value);
     const isMounted = useRef(false);
   
-    console.log(initialValues?.count);
    const increaseBy = (value: number) => {
    
     let newValue = Math.max( counter + value, 0);
